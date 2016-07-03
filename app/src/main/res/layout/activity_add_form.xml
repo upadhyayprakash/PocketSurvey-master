@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kunalganglani.com.suveyji.AddForm"
+    android:background="@drawable/formbackground"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    >
+
+
+    <EditText
+        android:id="@+id/etformName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter form name"
+
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Field Name"
+        />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+    <info.hoang8f.widget.FButton
+        fbutton:buttonColor="#5868C2"
+        fbutton:shadowColor="#25358F"
+        android:minHeight="40dp"
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="8dp"
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Add+"
+        android:background="@drawable/mybutton"
+        />
+    <info.hoang8f.widget.FButton
+        fbutton:buttonColor="#5868C2"
+        fbutton:shadowColor="#25358F"
+        android:minHeight="40dp"
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="8dp"
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/mybutton"
+        android:layout_gravity="right"
+        android:layout_marginTop="-40dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/formtitle" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

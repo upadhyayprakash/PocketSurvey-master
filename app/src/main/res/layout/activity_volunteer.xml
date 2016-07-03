@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="kunalganglani.com.suveyji.Volunteer"
+    android:focusableInTouchMode="false"
+    android:background="@drawable/formbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Hi" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:elevation="7.5dp"
+        android:id="@+id/view2"
+        card_view:cardCornerRadius="50dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignRight="@+id/bCampaign1"
+        android:layout_alignEnd="@+id/bCampaign1">
+        <ImageView
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:id="@+id/imageViewVolPic"
+            android:layout_centerInParent="false"
+            android:src="@drawable/graph"
+            android:layout_alignTop="@+id/editText"
+            android:layout_alignRight="@+id/bCampaign1"
+            android:layout_alignEnd="@+id/bCampaign1" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Welcome,\nPlease Choose your \nsurvey "
+        />
+
+    <info.hoang8f.widget.FButton
+        fbutton:buttonColor="#5868C2"
+        fbutton:shadowColor="#25358F"
+        android:minHeight="50dp"
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need Assessment Survey"
+        android:id="@+id/bCampaign1"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@drawable/mybutton"/>
+
+
+    <info.hoang8f.widget.FButton
+        fbutton:buttonColor="#5868C2"
+        fbutton:shadowColor="#25358F"
+        android:minHeight="50dp"
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employment Scheme"
+        android:id="@+id/bCampaign3"
+        android:layout_below="@+id/bCampaign1"
+        android:layout_marginTop="45dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@drawable/mybutton"
+        />
+    <ListView
+        android:id="@+id/mobile_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/bCampaign3"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
